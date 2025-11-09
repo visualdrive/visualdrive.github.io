@@ -316,55 +316,45 @@ Network Scenario</h1>
 
 
 <!-- Teaser video-->
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/demo_video.mp4" type="video/mp4">
-      </video> -->
-    <!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/demo_video289.mp4" type="video/mp4">
-          </video>
+      <div class="teaser-carousel-wrapper">
+        <div id="teaser-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/demo_video289.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/demo_video591.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/demo_video652.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/demo_video591.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/demo_video652.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle">
-        The left side of the video shows the route map, where the green line represents 
+        <!-- TODO: Replace with your video description -->
+        <h2 class="subtitle has-text-centered">
+          The left side of the video shows the route map, where the green line represents 
 the optimal path computed by the A* algorithm. When the vehicle encounters a 
 junction whose traversability differs from that indicated in the route map, 
 the optimal path is recomputed to comply with traffic rules. The right side 
 displays four camera views of the vehicle along with their corresponding local 
 maps. The text annotations on the bottom right corner are provided for explanation purposes and are not 
 fed into the model.
-      </h2>
+        </h2>
+      </div>
     </div>
   </div>
 </section>
