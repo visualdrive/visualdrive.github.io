@@ -92,47 +92,36 @@ window.addEventListener('scroll', function() {
 
 // Video carousel autoplay when in view
 function setupVideoCarouselAutoplay() {
-    const carouselVideos = document.querySelectorAll('.results-carousel video');
-    
-    if (carouselVideos.length === 0) return;
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            const video = entry.target;
-            if (entry.isIntersecting) {
-                // Video is in view, play it
-                video.play().catch(e => {
-                    // Autoplay failed, probably due to browser policy
-                    console.log('Autoplay prevented:', e);
-                });
-            } else {
-                // Video is out of view, pause it
-                video.pause();
-            }
-        });
-    }, {
-        threshold: 0.5 // Trigger when 50% of the video is visible
-    });
-    
-    carouselVideos.forEach(video => {
-        observer.observe(video);
-    });
+    // Disabled - videos require manual play
 }
 
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
-
-    var options = {
-		slidesToScroll: 1,
-		slidesToShow: 1,
-		loop: true,
-		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
+ 
+    // Default options for most carousels (auto-advance)
+    var defaultCarouselOptions = {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        loop: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
     }
-
-	// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
+ 
+    // Teaser carousel: do NOT auto-advance; manual only
+    var teaserCarouselOptions = {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        loop: true,
+        infinite: true,
+        autoplay: false
+    }
+ 
+    // Initialize teaser carousel with manual controls only
+    bulmaCarousel.attach('#teaser-carousel', teaserCarouselOptions);
+ 
+    // Initialize all other carousels with default options
+    bulmaCarousel.attach('.carousel:not(#teaser-carousel)', defaultCarouselOptions);
 	
     bulmaSlider.attach();
     
