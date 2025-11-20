@@ -268,8 +268,8 @@ body {
 }
 
 .teaser-caption {
-  margin: 0.25rem auto 0;
-  padding: 0.95rem 1rem;
+  margin: 1rem auto 0;
+  padding: 1.1rem 1.25rem;
   border-radius: var(--border-radius-lg);
   background: var(--background-secondary);
   color: var(--text-secondary);
@@ -278,7 +278,7 @@ body {
   border: 1px solid var(--border-color);
   font-style: italic;
   width: 100%;
-  max-width: 680px;
+  max-width: 960px;
 }
 
 .teaser-caption p {
@@ -598,3 +598,4 @@ a:focus {
     box-shadow: none !important;
   }
 }
+
