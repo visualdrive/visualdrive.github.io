@@ -92,7 +92,31 @@ window.addEventListener('scroll', function() {
 
 // Video carousel autoplay when in view
 function setupVideoCarouselAutoplay() {
-    // Disabled - videos require manual play
+    const carouselVideos = document.querySelectorAll('.results-carousel video');
+    
+    if (carouselVideos.length === 0) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                // Video is in view, play it
+                video.play().catch(e => {
+                    // Autoplay failed, probably due to browser policy
+                    console.log('Autoplay prevented:', e);
+                });
+            } else {
+                // Video is out of view, pause it
+                video.pause();
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of the video is visible
+    });
+    
+    carouselVideos.forEach(video => {
+        observer.observe(video);
+    });
 }
 
 $(document).ready(function() {
@@ -112,8 +136,8 @@ $(document).ready(function() {
     var teaserCarouselOptions = {
         slidesToScroll: 1,
         slidesToShow: 1,
-        loop: true,
-        infinite: true,
+        loop: false,
+        infinite: false,
         autoplay: false
     }
  
