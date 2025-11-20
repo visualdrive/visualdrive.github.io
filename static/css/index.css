@@ -258,6 +258,15 @@ body {
   max-width: 100%;
 }
 
+.teaser-carousel-wrapper .results-carousel {
+  padding-bottom: 0.25rem;
+}
+
+.teaser-carousel-wrapper .results-carousel .item {
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+}
+
 .teaser-carousel-wrapper .subtitle {
   font-size: 1rem !important;
   color: var(--text-secondary);
