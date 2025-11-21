@@ -261,11 +261,13 @@ body {
 #teaser-carousel {
   overflow: hidden !important;
   position: relative;
+  width: 100% !important;
 }
 
 #teaser-carousel .slider-container {
   overflow: hidden !important;
   width: 100% !important;
+  display: flex !important;
 }
 
 #teaser-carousel .slider-item {
@@ -273,6 +275,11 @@ body {
   flex: 0 0 100% !important;
   min-width: 100% !important;
   max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#teaser-carousel .slider-item:not(.is-active) {
+  display: none !important;
 }
 
 #teaser-carousel .item {
