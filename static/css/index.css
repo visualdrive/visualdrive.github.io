@@ -258,37 +258,6 @@ body {
   max-width: 100%;
 }
 
-#teaser-carousel {
-  overflow: hidden !important;
-  position: relative;
-  width: 100% !important;
-}
-
-#teaser-carousel .slider-container {
-  overflow: hidden !important;
-  width: 100% !important;
-  display: flex !important;
-}
-
-#teaser-carousel .slider-item {
-  width: 100% !important;
-  flex: 0 0 100% !important;
-  min-width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-#teaser-carousel .slider-item:not(.is-active) {
-  display: none !important;
-}
-
-#teaser-carousel .item {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 1.5rem !important;
-  box-sizing: border-box !important;
-}
-
 .teaser-carousel-wrapper .subtitle {
   font-size: 1rem !important;
   color: var(--text-secondary);
@@ -299,8 +268,8 @@ body {
 }
 
 .teaser-caption {
-  margin: 0.5rem auto 0;
-  padding: 0.85rem 1.25rem;
+  margin: 0.75rem -1.5rem 0;
+  padding: 1rem 1.5rem;
   border-radius: var(--border-radius-lg);
   background: var(--background-secondary);
   color: var(--text-secondary);
@@ -308,8 +277,7 @@ body {
   line-height: 1.6;
   border: 1px solid var(--border-color);
   font-style: italic;
-  width: calc(100% - 2.5rem);
-  max-width: 920px;
+  width: calc(100% + 3rem);
 }
 
 .teaser-caption p {
@@ -325,7 +293,7 @@ body {
   padding: 1rem 0;
 }
 
-.results-carousel:not(#teaser-carousel) .item {
+.results-carousel .item {
   margin: 1rem;
   overflow: hidden;
   padding: 1.5rem;
@@ -335,10 +303,6 @@ body {
   box-shadow: var(--shadow-md);
   transition: var(--transition);
   border: 1px solid var(--border-color);
-  flex: 0 0 auto;
-  width: calc(100% - 2rem);
-  min-width: calc(100% - 2rem);
-  max-width: calc(100% - 2rem);
 }
 
 .results-carousel .item:hover {
