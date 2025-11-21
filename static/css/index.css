@@ -258,6 +258,24 @@ body {
   max-width: 100%;
 }
 
+#teaser-carousel {
+  overflow: hidden !important;
+}
+
+#teaser-carousel .carousel-container {
+  overflow: hidden !important;
+  display: flex;
+}
+
+#teaser-carousel .item {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
 .teaser-carousel-wrapper .subtitle {
   font-size: 1rem !important;
   color: var(--text-secondary);
@@ -294,6 +312,14 @@ body {
   padding: 1rem 0;
 }
 
+#teaser-carousel {
+  overflow: hidden;
+}
+
+#teaser-carousel .carousel-container {
+  overflow: hidden;
+}
+
 .results-carousel .item {
   margin: 1rem;
   overflow: hidden;
@@ -304,6 +330,10 @@ body {
   box-shadow: var(--shadow-md);
   transition: var(--transition);
   border: 1px solid var(--border-color);
+  flex: 0 0 auto;
+  width: calc(100% - 2rem);
+  min-width: calc(100% - 2rem);
+  max-width: calc(100% - 2rem);
 }
 
 .results-carousel .item:hover {
