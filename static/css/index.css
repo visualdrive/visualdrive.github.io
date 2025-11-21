@@ -260,20 +260,26 @@ body {
 
 #teaser-carousel {
   overflow: hidden !important;
+  position: relative;
 }
 
-#teaser-carousel .carousel-container {
+#teaser-carousel .slider-container {
   overflow: hidden !important;
-  display: flex;
+  width: 100% !important;
+}
+
+#teaser-carousel .slider-item {
+  width: 100% !important;
+  flex: 0 0 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
 }
 
 #teaser-carousel .item {
-  flex: 0 0 100% !important;
   width: 100% !important;
-  min-width: 100% !important;
-  max-width: 100% !important;
   margin: 0 !important;
-  box-sizing: border-box;
+  padding: 1.5rem !important;
+  box-sizing: border-box !important;
 }
 
 .teaser-carousel-wrapper .subtitle {
@@ -312,15 +318,7 @@ body {
   padding: 1rem 0;
 }
 
-#teaser-carousel {
-  overflow: hidden;
-}
-
-#teaser-carousel .carousel-container {
-  overflow: hidden;
-}
-
-.results-carousel .item {
+.results-carousel:not(#teaser-carousel) .item {
   margin: 1rem;
   overflow: hidden;
   padding: 1.5rem;
