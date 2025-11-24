@@ -365,6 +365,21 @@ body {
   border-radius: 2px;
 }
 
+/* Teaser section titles - left aligned, no background */
+.teaser-section-titles {
+  margin: 2rem 0;
+}
+
+.teaser-title-left {
+  text-align: left !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.teaser-title-left::after {
+  left: 0 !important;
+  transform: none !important;
+}
+
 /* Content Improvements */
 .content.has-text-justified {
   font-size: 1.1rem;
