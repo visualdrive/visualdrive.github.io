@@ -318,6 +318,14 @@ body {
   height: auto;
 }
 
+.results-carousel .item .content {
+  font-size: 1rem;
+}
+
+.results-carousel .item .columns {
+  font-size: 0;
+}
+
 .results-carousel .subtitle {
   font-size: 1rem !important;
   color: var(--text-secondary);
