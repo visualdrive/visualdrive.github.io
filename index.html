@@ -193,75 +193,80 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Long-Horizon On-Road Navigation with Vision-Map Guidance</h1>
+            <h1 class="title is-1 publication-title">Long-Horizon On-Road Navigation with Vision-Map Guidance
+              Guidance</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-              </span>
-            </div>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
 
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your institution and conference/journal info -->
-              <span class="author-block">Institution Name<br>Conference name and year</span>
-              <!-- TODO: Remove this line if no equal contribution -->
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-            </div>
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
 
-            <div class="publication-links">
-              <!-- TODO: Update with your arXiv paper ID -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
                 </span>
-                <span>Paper</span>
-              </a>
-            </span>
 
-            <!-- TODO: Add your supplementary material PDF or remove this section -->
-            <span class="link-block">
-              <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                <i class="fas fa-file-pdf"></i>
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
               </span>
-              <span>Supplementary</span>
-            </a>
-          </span>
-
-          <!-- TODO: Replace with your GitHub repository URL -->
-          <span class="link-block">
-            <a href="https://github.com/YOUR REPO HERE" target="_blank"
-            class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>Code</span>
-          </a>
-        </span>
-
-        <!-- TODO: Update with your arXiv paper ID -->
-        <span class="link-block">
-          <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-          class="external-link button is-normal is-rounded is-dark">
-          <span class="icon">
-            <i class="ai ai-arxiv"></i>
-          </span>
-          <span>arXiv</span>
-        </a>
-      </span>
-    </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+    </div>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -272,12 +277,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Traditional long-horizon goal-point on-road navigation typically employs a two-stage paradigm with global path planning and local behavior decision-making. However, this fashion relies on topological maps, which are inherently prone to information latency and incompleteness. Consequently, in familiar regions where road conditions frequently change or in unfamiliar and unstructured areas, pre-planned routes become unreliable.
-          </p>
-          <p>
-            To address these challenges, we first propose a novel paradigm that coordinates global visual maps with local observations for navigation, with the former providing on-road network layout for optimal routing and the latter assessing route feasibility. Next, we design an architecture based on multimodal language model that unifies the traditional two-stage pipeline into a single-stage, end-to-end framework. Meanwhile, to facilitate this research, we contribute a large-scale multimodal dataset with comprehensive sensor modalities. Finally, extensive experiments demonstrate that our method outperforms conventional approaches, achieving state-of-the-art performance.
-          </p>
-        </div>
+Traditional long-horizon goal-point on-road navigation typically employs a two-stage paradigm with global path planning and local behavior decision-making. However, this fashion relies on topological maps, which are inherently prone to information latency and incompleteness. Consequently, in familiar regions where road conditions frequently change or in unfamiliar and unstructured areas, pre-planned routes become unreliable. To address these challenges, we first propose a novel paradigm that coordinates global visual maps with local observations for navigation, with the the former provides on-road network layout for optimal routing and the latter assesses route feasibility. Next, we design an architecture based on multimodal language model that unifies the traditional two-stage pipeline into a single-stage, end-to-end framework. Meanwhile, to facilitate this research, we contribute a large-scale multimodal dataset with comprehensive sensor modalities. Finally, extensive experiments demonstrate that our method outperforms conventional approaches, achieving state-of-the-art performance.        </div>
       </div>
     </div>
   </div>
@@ -285,17 +285,16 @@
 <!-- End paper abstract -->
 
 <!-- Task Introduction -->
-<section class="section">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Task Introduction</h2>
         <div class="content has-text-justified">
-          <figure>
-            <img src="static/images/introduction.png" alt="Task Introduction" class="publication-image">
-            <figcaption>
-              The agent initially plans to proceed straight ahead as the global optimal orange path shown in (b). However, a "No Straight Ahead" sign in (a) prohibits the movement, revealing a discrepancy between the static vision map and the dynamic road conditions. Consequently, it decides to turn right to follow the green path, which serves as the alternative optimal path given the constraint.
-            </figcaption>
+          <figure style="margin: 2rem 0;">
+            <img src="static/images/introduction.png" alt="Task Introduction" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);">
+                    <figcaption style="margin-top: 1rem; font-style: italic; color: var(--text-secondary); text-align: left;">
+              The agent initially plans to proceed straight ahead as the global optimal orange path shown in (b), However, a "No Straight Ahead" sign in (a) prohibits the movement, revealing a discrepancy between the static vision map and the dynamic road conditions Consequently, it decides to turn right to follow the green path, which serves as the alternative optimal path given the constraint.            </figcaption>
           </figure>
         </div>
       </div>
@@ -311,9 +310,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Dataset</h2>
         <div class="content has-text-justified">
-          <figure>
-            <img src="static/images/dataset.png" alt="Dataset Overview" class="publication-image">
-            <figcaption>
+          <figure style="margin: 2rem 0;">
+            <img src="static/images/dataset.png" alt="Dataset Overview" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);">
+            <figcaption style="margin-top: 1rem; font-style: italic; color: var(--text-secondary); text-align: left;">
               Placeholder for the dataset illustration. This image will be replaced with a detailed visualization of the proposed dataset in the future.
             </figcaption>
           </figure>
@@ -324,58 +323,60 @@
 </section>
 <!-- End Dataset -->
 
-<!-- Global Navigation -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Global Navigation</h2>
-        <!-- TODO: Replace with your teaser video -->
-        <div class="teaser-carousel-wrapper">
-          <div id="teaser-carousel" class="carousel results-carousel">
-            <div class="item item-video1">
-              <!-- TODO: Add poster image for better preview -->
-              <video poster="" id="video1" controls muted height="100%" preload="metadata">
-                <!-- Your video file here -->
-                <source src="static/videos/demo_video289.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video2">
-              <!-- TODO: Add poster image for better preview -->
-              <video poster="" id="video2" controls muted height="100%" preload="metadata">
-                <!-- Your video file here -->
-                <source src="static/videos/demo_video591.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video3">
-              <!-- TODO: Add poster image for better preview -->
-              <video poster="" id="video3" controls muted height="100%" preload="metadata">
-                <!-- Your video file here -->
-                <source src="static/videos/demo_video652.mp4" type="video/mp4">
-              </video>
-            </div>
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container">
+    <div class="hero-body">
+      <!-- Global Navigation section -->
+      <div class="container is-max-desktop" style="margin-bottom: 2rem;">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Global Navigation</h2>
           </div>
-          <!-- TODO: Replace with your video description -->
-          <div class="teaser-caption" role="note">
-            <p>
-              The left side of the video shows the route map, where the green line represents the optimal path computed by the A* algorithm as the ground truth trajectory. When the vehicle encounters a junction whose traversability differs from that indicated in the route map, the optimal path is dynamically recomputed to comply with traffic rules. The right side displays four camera views from the vehicle alongside their corresponding local maps.
-            </p>
-            <p>
-              <strong>Note:</strong> The text annotations in the bottom right corner are provided for explanatory purposes only and are not fed into the model.
-            </p>
+        </div>
+      </div>
+      <!-- TODO: Replace with your teaser video -->
+      <div class="teaser-carousel-wrapper">
+        <div id="teaser-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video1" controls muted height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/demo_video289.mp4" type="video/mp4">
+            </video>
           </div>
+          <div class="item item-video2">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video2" controls muted height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/demo_video591.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video3" controls muted height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/demo_video652.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- TODO: Replace with your video description -->
+        <div class="teaser-caption" role="note">
+          <p>
+            The left side of the video shows the route map, where the green line represents the optimal path computed by the A* algorithm as the ground truth trajectory. When the vehicle encounters a junction whose traversability differs from that indicated in the route map, the optimal path is dynamically recomputed to comply with traffic rules. The right side displays four camera views from the vehicle alongside their corresponding local maps. Note that the text annotations in the bottom right corner are provided for explanatory purposes only and are not fed into the model.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End Global Navigation -->
+<!-- End teaser video -->
 
 <!-- Local Junction-Level Route Decision-Making -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
+<section class="section">
+  <div class="container">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <h2 class="title is-3">Local Junction-Level Route Decision-Making</h2>
         
         <!-- Video Groups Carousel -->
@@ -395,8 +396,8 @@
                   </video>
                 </div>
               </div>
-              <div class="content has-text-justified video-caption">
-                <p>
+              <div class="content has-text-justified" style="margin-top: 1rem; margin-bottom: 0;">
+                <p style="font-style: italic; color: var(--text-secondary);">
                   Caption placeholder for video group 1. This is a temporary description that will be replaced with actual content later.
                 </p>
               </div>
@@ -416,8 +417,8 @@
                   </video>
                 </div>
               </div>
-              <div class="content has-text-justified video-caption">
-                <p>
+              <div class="content has-text-justified" style="margin-top: 1rem; margin-bottom: 0;">
+                <p style="font-style: italic; color: var(--text-secondary);">
                   Caption placeholder for video group 2. This is a temporary description that will be replaced with actual content later.
                 </p>
               </div>
@@ -437,8 +438,8 @@
                   </video>
                 </div>
               </div>
-              <div class="content has-text-justified video-caption">
-                <p>
+              <div class="content has-text-justified" style="margin-top: 1rem; margin-bottom: 0;">
+                <p style="font-style: italic; color: var(--text-secondary);">
                   Caption placeholder for video group 3. This is a temporary description that will be replaced with actual content later.
                 </p>
               </div>
@@ -458,8 +459,8 @@
                   </video>
                 </div>
               </div>
-              <div class="content has-text-justified video-caption">
-                <p>
+              <div class="content has-text-justified" style="margin-top: 1rem; margin-bottom: 0;">
+                <p style="font-style: italic; color: var(--text-secondary);">
                   Caption placeholder for video group 4. This is a temporary description that will be replaced with actual content later.
                 </p>
               </div>
@@ -479,13 +480,14 @@
                   </video>
                 </div>
               </div>
-              <div class="content has-text-justified video-caption">
-                <p>
+              <div class="content has-text-justified" style="margin-top: 1rem; margin-bottom: 0;">
+                <p style="font-style: italic; color: var(--text-secondary);">
                   Caption placeholder for video group 5. This is a temporary description that will be replaced with actual content later.
                 </p>
               </div>
             </div>
 
+            
             <!-- Video Group 6 -->
             <div class="item">
               <div class="columns" style="gap: 1rem; margin: 0;">
@@ -500,8 +502,8 @@
                   </video>
                 </div>
               </div>
-              <div class="content has-text-justified video-caption">
-                <p>
+              <div class="content has-text-justified" style="margin-top: 1rem; margin-bottom: 0;">
+                <p style="font-style: italic; color: var(--text-secondary);">
                   Caption placeholder for video group 6. This is a temporary description that will be replaced with actual content later.
                 </p>
               </div>
@@ -514,30 +516,26 @@
 </section>
 <!-- End Local Junction-Level Route Decision-Making -->
 
-<!-- BibTeX citation -->
-<section class="section hero is-light" id="BibTeX">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="bibtex-header">
-          <h2 class="title is-3">BibTeX</h2>
-          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-            <i class="fas fa-copy"></i>
-            <span class="copy-text">Copy</span>
-          </button>
-        </div>
-        <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
   title={Your Paper Title Here},
   author={First Author and Second Author and Third Author},
   journal={Conference/Journal Name},
   year={2024},
   url={https://your-domain.com/your-project-page}
 }</code></pre>
-      </div>
     </div>
-  </div>
 </section>
-<!-- End BibTeX citation -->
+<!--End BibTex citation -->
 
 
   <footer class="footer">
