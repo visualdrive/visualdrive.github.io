@@ -78,8 +78,25 @@ body {
     transform: translateY(-2px);
 }
 
+.link-block {
+    display: inline-block;
+    margin: 0.5rem 0.25rem;
+}
+
 .link-block a {
-    margin: 8px 4px;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
 }
 
 .dnerf {
@@ -94,13 +111,19 @@ body {
 }
 
 .hero.is-light {
-  background: var(--background-secondary);
+  background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary));
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
 
 .hero-body {
   padding: 4rem 1.5rem;
+}
+
+/* Main hero section (title area) */
+.hero:first-of-type {
+  background: linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 100%);
+  padding: 5rem 1.5rem 4rem;
 }
 
 .teaser .hero-body {
@@ -119,7 +142,11 @@ body {
     font-weight: 800 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
-    line-height: 1.1 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.03em;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .publication-banner {
@@ -149,6 +176,7 @@ body {
     font-family: 'Inter', sans-serif !important;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
 .publication-venue {
@@ -256,6 +284,7 @@ body {
 .teaser-carousel-wrapper {
   width: 100%;
   max-width: 100%;
+  margin-top: 1rem;
 }
 
 .teaser-carousel-wrapper .subtitle {
@@ -268,16 +297,17 @@ body {
 }
 
 .teaser-caption {
-  margin: 0.75rem -1.5rem 0;
-  padding: 1rem 1.5rem;
+  margin: 1.5rem -1.5rem 0;
+  padding: 1.25rem 1.5rem;
   border-radius: var(--border-radius-lg);
-  background: var(--background-secondary);
+  background: linear-gradient(to bottom, var(--background-secondary), var(--background-accent));
   color: var(--text-secondary);
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   border: 1px solid var(--border-color);
   font-style: italic;
   width: calc(100% + 3rem);
+  box-shadow: var(--shadow-sm);
 }
 
 .teaser-caption p {
@@ -285,7 +315,13 @@ body {
 }
 
 .teaser-caption p + p {
-  margin-top: 0.85rem;
+  margin-top: 1rem;
+}
+
+.teaser-caption p strong {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-style: normal;
 }
 
 .results-carousel {
@@ -305,9 +341,18 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.results-carousel .item:first-child {
+  margin-left: 0;
+}
+
+.results-carousel .item:last-child {
+  margin-right: 0;
+}
+
 .results-carousel .item:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
 }
 
 .results-carousel .item img,
@@ -316,10 +361,29 @@ body {
   border-radius: var(--border-radius);
   width: 100%;
   height: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.results-carousel .item video:hover {
+  transform: scale(1.01);
 }
 
 .results-carousel .item .content {
   font-size: 1rem;
+}
+
+.video-caption {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.video-caption p {
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 .results-carousel .item .columns {
@@ -356,9 +420,10 @@ body {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   color: var(--text-primary);
-  margin-bottom: 2rem !important;
+  margin-bottom: 2.5rem !important;
   position: relative;
   padding-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
 .title.is-3::after {
@@ -367,10 +432,36 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
+  width: 80px;
+  height: 4px;
   background: var(--gradient-accent);
   border-radius: 2px;
+  opacity: 0.8;
+}
+
+/* Center titles when in centered columns */
+.has-text-centered .title.is-3::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Section spacing improvements */
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.section.hero.is-light {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary));
+}
+
+/* Alternating section backgrounds for better visual hierarchy */
+.section:not(.hero.is-light) {
+  background: var(--background-primary);
+}
+
+.section + .section.hero.is-light {
+  border-top: 1px solid var(--border-color);
 }
 
 /* Content Improvements */
@@ -382,6 +473,55 @@ body {
 
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
+}
+
+.content.has-text-justified p:last-child {
+  margin-bottom: 0;
+}
+
+/* Improve content readability */
+.content {
+  max-width: 100%;
+}
+
+.content p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Figure and image improvements */
+figure {
+  margin: 2.5rem 0;
+  transition: var(--transition);
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.publication-image {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  display: block;
+}
+
+.publication-image:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+figcaption {
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: left;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  padding: 0 0.5rem;
 }
 
 /* Footer Improvements */
@@ -429,7 +569,20 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bibtex-header .title.is-3 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+
+.bibtex-header .title.is-3::after {
+  display: none;
+}
+
+#bibtex-code {
+  margin-top: 0;
 }
 
 .copy-bibtex-btn {
@@ -497,10 +650,26 @@ code {
 
 
 
+/* Section transitions */
+.section {
+  opacity: 1;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Improved container spacing */
+.container.is-max-desktop {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 /* Mobile Responsive Improvements */
 @media screen and (max-width: 768px) {
   .hero-body {
     padding: 2rem 1rem;
+  }
+  
+  .hero:first-of-type {
+    padding: 3rem 1rem 2rem;
   }
   
   .publication-header .hero-body {
@@ -508,13 +677,13 @@ code {
   }
   
   .publication-title {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
   }
   
   .publication-authors {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
   }
   
   .button {
@@ -539,6 +708,20 @@ code {
   .teaser-caption {
     width: 100%;
     margin: 0.75rem 0 0;
+    padding: 1rem;
+  }
+  
+  .section {
+    padding: 2.5rem 1rem;
+  }
+  
+  .section.hero.is-light {
+    padding: 2.5rem 1rem;
+  }
+  
+  .title.is-3 {
+    font-size: 1.75rem !important;
+    margin-bottom: 1.5rem !important;
   }
 }
 
@@ -585,6 +768,15 @@ code {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero, .section {
   animation: fadeInUp 0.6s ease-out;
 }
@@ -595,6 +787,48 @@ code {
 a:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
+}
+
+/* Better visual hierarchy for sections */
+.section + .section {
+  margin-top: 0;
+}
+
+/* Improve spacing between sections */
+.section:not(:last-child) {
+  margin-bottom: 0;
+}
+
+/* Ensure consistent section padding */
+.section .container.is-max-desktop {
+  max-width: 1200px;
+}
+
+/* Improve video container styling */
+.teaser-carousel-wrapper {
+  position: relative;
+}
+
+.teaser-carousel-wrapper .carousel {
+  margin-bottom: 0;
+}
+
+/* Better spacing for content sections */
+.content {
+  max-width: 100%;
+}
+
+.content figure {
+  margin: 2.5rem 0;
+}
+
+/* Improve author block styling */
+.author-block {
+  white-space: nowrap;
+}
+
+.author-block:last-child {
+  margin-right: 0;
 }
 
 
