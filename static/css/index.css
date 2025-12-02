@@ -284,7 +284,6 @@ body {
 .teaser-carousel-wrapper {
   width: 100%;
   max-width: 100%;
-  margin-top: 1rem;
 }
 
 .teaser-carousel-wrapper .subtitle {
@@ -341,14 +340,6 @@ body {
   border: 1px solid var(--border-color);
 }
 
-.results-carousel .item:first-child {
-  margin-left: 0;
-}
-
-.results-carousel .item:last-child {
-  margin-right: 0;
-}
-
 .results-carousel .item:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
@@ -371,19 +362,6 @@ body {
 
 .results-carousel .item .content {
   font-size: 1rem;
-}
-
-.video-caption {
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-
-.video-caption p {
-  font-style: italic;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin: 0;
-  font-size: 0.95rem;
 }
 
 .results-carousel .item .columns {
@@ -420,7 +398,7 @@ body {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   color: var(--text-primary);
-  margin-bottom: 2.5rem !important;
+  margin-bottom: 2rem !important;
   position: relative;
   padding-bottom: 1rem;
   letter-spacing: -0.02em;
@@ -439,12 +417,6 @@ body {
   opacity: 0.8;
 }
 
-/* Center titles when in centered columns */
-.has-text-centered .title.is-3::after {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 /* Section spacing improvements */
 .section {
   padding: 4rem 1.5rem;
@@ -453,15 +425,6 @@ body {
 .section.hero.is-light {
   padding: 4rem 1.5rem;
   background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary));
-}
-
-/* Alternating section backgrounds for better visual hierarchy */
-.section:not(.hero.is-light) {
-  background: var(--background-primary);
-}
-
-.section + .section.hero.is-light {
-  border-top: 1px solid var(--border-color);
 }
 
 /* Content Improvements */
@@ -479,19 +442,9 @@ body {
   margin-bottom: 0;
 }
 
-/* Improve content readability */
-.content {
-  max-width: 100%;
-}
-
-.content p {
-  text-align: justify;
-  hyphens: auto;
-}
-
 /* Figure and image improvements */
 figure {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
   transition: var(--transition);
 }
 
@@ -499,19 +452,6 @@ figure img {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.publication-image {
-  width: 100%;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-  display: block;
-}
-
-.publication-image:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
 }
 
 figcaption {
@@ -569,20 +509,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.bibtex-header .title.is-3 {
-  margin-bottom: 0 !important;
-  padding-bottom: 0;
-}
-
-.bibtex-header .title.is-3::after {
-  display: none;
-}
-
-#bibtex-code {
-  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .copy-bibtex-btn {
@@ -792,16 +719,6 @@ a:focus {
 /* Better visual hierarchy for sections */
 .section + .section {
   margin-top: 0;
-}
-
-/* Improve spacing between sections */
-.section:not(:last-child) {
-  margin-bottom: 0;
-}
-
-/* Ensure consistent section padding */
-.section .container.is-max-desktop {
-  max-width: 1200px;
 }
 
 /* Improve video container styling */
