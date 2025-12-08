@@ -271,7 +271,7 @@ body {
 }
 
 .teaser-caption {
-  margin: 0.1rem 0 0;
+  margin: 0.3rem 0 0;
   padding: 0.75rem 1rem;
   border-radius: var(--border-radius);
   background: var(--background-secondary);
