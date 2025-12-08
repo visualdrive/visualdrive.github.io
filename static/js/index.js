@@ -128,8 +128,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         loop: true,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        autoplay: false,
     }
  
     // Teaser carousel: do NOT auto-advance; manual only
@@ -143,13 +142,16 @@ $(document).ready(function() {
  
     // Initialize teaser carousel with manual controls only
     bulmaCarousel.attach('#teaser-carousel', teaserCarouselOptions);
- 
+
+    // Initialize junction carousel with manual controls only (same as teaser)
+    bulmaCarousel.attach('#junction-carousel', teaserCarouselOptions);
+
     // Initialize all other carousels with default options
-    bulmaCarousel.attach('.carousel:not(#teaser-carousel)', defaultCarouselOptions);
+    bulmaCarousel.attach('.carousel:not(#teaser-carousel):not(#junction-carousel)', defaultCarouselOptions);
 	
     bulmaSlider.attach();
-    
+
     // Setup video autoplay for carousel
-    setupVideoCarouselAutoplay();
+    // setupVideoCarouselAutoplay();
 
 })
