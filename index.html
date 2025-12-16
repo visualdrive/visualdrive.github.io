@@ -274,9 +274,24 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+          <!-- Paper abstract -->
           <p>
-Traditional long-horizon point-goal on-road navigation typically employs a two-stage pipeline with global path planning followed by local behavior decision making. However, this approach relies on topological maps, which are inherently prone to information latency and incompleteness. Consequently, in familiar regions susceptible to frequent road condition changes. or in unfamiliar and unstructured areas, pre-planned routes become unreliable. To address these challenges, we propose a novel task coordinating global visual maps with local observations for navigation, in which the former provides road network layout for optimal routing and the latter assesses real-time route feasibility. To facilitate this research, we contribute a large-scale multimodal dataset with comprehensive sensor modalities, building upon which, we design an architecture based on multimodal large language model, achieving a single-stage, end-to-end framework. Extensive experiments demonstrate that our method outperforms conventional approaches, reaching state-of-the-art performance.      </div>
+Traditional navigation based on topological maps is prone to failure in dynamic or unstructured areas due to information latency. To address this, we propose a novel approach that coordinates global visual maps for routing with real-time local observations for feasibility. By introducing a large-scale multimodal dataset and a single-stage MLLM-based framework, our method effectively addresses these challenges and achieves state-of-the-art performance.
+          </p>
+
+          <p><strong>Contributions</strong></p>
+          <ul>
+            <li>
+              We propose a novel navigation task and design an end-to-end framework that fuses visual information from both global vision maps and local observations for long-horizon point-goal navigation, targeting dynamic or unstructured road conditions in on-road scenarios.
+            </li>
+            <li>
+              We build a multimodal dataset in on-road scenarios for evaluating optimal local junction-level route decision-making and global navigation performance across diverse road conditions.
+            </li>
+            <li>
+              We establish comprehensive metrics and conduct extensive experiments to verify the effectiveness of our method.
+            </li>
+          </ul>
+        </div>
     </div>
   </div>
 </section>
