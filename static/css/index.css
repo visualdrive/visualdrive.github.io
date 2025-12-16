@@ -31,7 +31,7 @@ html {
 body {
   font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.5;  /* slightly tighter global line spacing */
   font-size: 16px;
   background-color: var(--background-primary);
   -webkit-font-smoothing: antialiased;
@@ -288,7 +288,7 @@ figure figcaption {
   background: var(--background-secondary);
   color: #000000;             /* use solid black text */
   font-size: 0.95rem;         /* keep current size */
-  line-height: 1.5;           /* slightly tighter line spacing */
+  line-height: 1.4;           /* more compact line spacing */
   border-left: 3px solid var(--primary-color);
   font-style: normal;         /* remove italics */
   font-weight: 400;           /* normal weight */
@@ -402,8 +402,8 @@ figure figcaption {
 /* Content Improvements */
 .content.has-text-justified {
   font-size: 1.1rem;
-  line-height: 1.6;  /* slightly tighter line spacing */
-  color: var(--text-secondary);
+  line-height: 1.5;  /* more compact line spacing */
+  color: #000000;  /* use solid black text for main content */
 }
 
 .content.has-text-justified p {
@@ -419,7 +419,7 @@ figure figcaption {
 
 .footer .content {
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.5;           /* match more compact spacing */
 }
 
 .footer a {
