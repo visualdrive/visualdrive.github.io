@@ -1,4 +1,4 @@
- /* Modern CSS Variables for consistent theming */
+/* Modern CSS Variables for consistent theming */
 :root {
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
@@ -259,6 +259,8 @@ body {
 .teaser-carousel-wrapper {
   width: 100%;
   max-width: 100%;
+  position: relative;          /* allow moving pagination without overlapping video */
+  padding-bottom: 32px;        /* reserve space for dots to sit below controls */
 }
 
 .teaser-carousel-wrapper .subtitle {
@@ -337,7 +339,8 @@ body {
 
 /* Ensure teaser carousel controls don't cover video progress bar */
 #teaser-carousel .slider-pagination {
-  pointer-events: none;      /* let clicks 穿透到视频进度条 */
+  bottom: -12px !important;  /* place dots just below the video controls */
+  pointer-events: auto;      /* keep dots clickable */
 }
 
 /* Pagination and Misc Improvements */
