@@ -336,9 +336,9 @@ body {
 }
 
 /* Ensure teaser carousel controls don't cover video progress bar */
-#teaser-carousel .carousel-pagination {
+#teaser-carousel .slider-pagination {
   bottom: -28px !important; /* move bullets further below the video controls */
-  pointer-events: none;      /* let clicks穿透到视频进度条 */
+  pointer-events: none;      /* let clicks 穿透到视频进度条 */
 }
 
 /* Pagination and Misc Improvements */
