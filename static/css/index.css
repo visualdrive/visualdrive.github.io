@@ -262,7 +262,7 @@ figure figcaption {
   font-style: normal !important;
   font-weight: 400 !important;
   font-size: 0.95rem;
-  margin-top: 0.35rem !important; /* bring caption closer to the image */
+  margin-top: 0.15rem !important; /* bring caption even closer to the image */
 }
 
 .teaser-carousel-wrapper {
@@ -282,7 +282,7 @@ figure figcaption {
 }
 
 .teaser-caption {
-  margin: 0.15rem 0 0;        /* bring caption closer to the video */
+  margin: 0.08rem 0 0;        /* bring caption even closer to the video */
   padding: 0.75rem 1rem;
   border-radius: var(--border-radius);
   background: var(--background-secondary);
@@ -338,6 +338,11 @@ figure figcaption {
 
 .results-carousel .item .columns {
   font-size: 0;
+}
+
+/* Reduce bottom padding under each video column so caption is closer */
+.results-carousel .item .columns .column {
+  padding-bottom: 0.25rem !important;
 }
 
 .results-carousel .subtitle {
