@@ -154,4 +154,19 @@ $(document).ready(function() {
     // Setup video autoplay for carousel
     // setupVideoCarouselAutoplay();
 
+    // Allow dragging/seeking on video controls (prevent carousel drag from hijacking)
+    document.querySelectorAll('.results-carousel video').forEach((video) => {
+        const stopEvents = [
+            'pointerdown', 'pointerup', 'pointermove',
+            'mousedown', 'mouseup', 'mousemove',
+            'touchstart', 'touchmove', 'touchend'
+        ];
+
+        stopEvents.forEach(evt => {
+            video.addEventListener(evt, (e) => {
+                e.stopPropagation();
+            }, { passive: true });
+        });
+    });
+
 })
