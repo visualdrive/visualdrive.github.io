@@ -260,7 +260,7 @@ body {
   width: 100%;
   max-width: 100%;
   position: relative;          /* allow moving pagination without overlapping video */
-  padding-bottom: 32px;        /* reserve space for dots to sit below controls */
+  padding-bottom: 40px;        /* more space so dots are fully visible */
 }
 
 .teaser-carousel-wrapper .subtitle {
@@ -339,7 +339,7 @@ body {
 
 /* Ensure teaser carousel controls don't cover video progress bar */
 #teaser-carousel .slider-pagination {
-  bottom: -12px !important;  /* place dots just below the video controls */
+  bottom: -4px !important;   /* pull dots up so they are fully visible */
   pointer-events: auto;      /* keep dots clickable */
 }
 
