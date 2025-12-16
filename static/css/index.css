@@ -100,15 +100,15 @@ body {
 }
 
 .hero-body {
-  padding: 1.5rem 1.5rem 0.5rem;
+  padding: 1rem 1.5rem 0.5rem;   /* reduce top padding so section titles are closer */
 }
 
 .section {
-  padding: 1.5rem 1.5rem 0.5rem;
+  padding: 1rem 1.5rem 0.25rem;  /* reduce top padding to bring titles closer */
 }
 
 .teaser .hero-body {
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 1rem 1.5rem 1rem;     /* keep teaser consistent */
 }
 
 .teaser {
@@ -275,7 +275,7 @@ figure {
   width: 100%;
   max-width: 100%;
   position: relative;          /* allow moving pagination without overlapping video */
-  padding-bottom: 40px;        /* more space so dots are fully visible */
+  padding-bottom: 28px;        /* slightly less bottom space so caption is closer */
 }
 
 .teaser-carousel-wrapper .subtitle {
