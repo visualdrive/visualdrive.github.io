@@ -335,6 +335,11 @@ body {
   font-weight: 500;
 }
 
+/* Ensure teaser carousel controls don't cover video progress bar */
+#teaser-carousel .carousel-pagination {
+  bottom: -24px !important; /* move bullets below the video controls */
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
