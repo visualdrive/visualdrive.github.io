@@ -256,6 +256,14 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
+/* Figure captions: black, normal style, normal weight */
+figure figcaption {
+  color: #000000 !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 0.95rem;
+}
+
 .teaser-carousel-wrapper {
   width: 100%;
   max-width: 100%;
@@ -277,11 +285,12 @@ body {
   padding: 0.75rem 1rem;
   border-radius: var(--border-radius);
   background: var(--background-secondary);
-  color: var(--text-secondary);
-  font-size: 0.95rem;
+  color: #000000;             /* use solid black text */
+  font-size: 0.95rem;         /* keep current size */
   line-height: 1.7;
   border-left: 3px solid var(--primary-color);
-  font-style: italic;
+  font-style: normal;         /* remove italics */
+  font-weight: 400;           /* normal weight */
 }
 
 .teaser-caption p {
