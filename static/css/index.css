@@ -4,8 +4,8 @@
   --primary-hover: #1d4ed8;
   --secondary-color: #64748b;
   --accent-color: #0ea5e9;
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
+  --text-primary: #363636;   /* headings */
+  --text-secondary: #3D3D3D; /* body text */
   --text-light: #94a3b8;
   --background-primary: #ffffff;
   --background-secondary: #f8fafc;
@@ -258,7 +258,7 @@ body {
 
 /* Figure captions: black, normal style, normal weight */
 figure figcaption {
-  color: #000000 !important;
+  color: #3D3D3D !important;
   font-style: normal !important;
   font-weight: 400 !important;
   font-size: 0.95rem;
@@ -286,7 +286,7 @@ figure figcaption {
   padding: 0.75rem 1rem;
   border-radius: var(--border-radius);
   background: var(--background-secondary);
-  color: #000000;             /* use solid black text */
+  color: #3D3D3D;             /* body text color */
   font-size: 0.95rem;         /* keep current size */
   line-height: 1.4;           /* more compact line spacing */
   border-left: 3px solid var(--primary-color);
@@ -403,7 +403,7 @@ figure figcaption {
 .content.has-text-justified {
   font-size: 1.1rem;
   line-height: 1.5;  /* more compact line spacing */
-  color: #000000;  /* use solid black text for main content */
+  color: #3D3D3D;  /* body text color */
 }
 
 .content.has-text-justified p {
