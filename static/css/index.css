@@ -265,6 +265,12 @@ figure figcaption {
   margin-top: 0.15rem !important; /* bring caption even closer to the image */
 }
 
+/* Reduce vertical space above/below figures so caption bottoms are closer to section edge */
+figure {
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
 .teaser-carousel-wrapper {
   width: 100%;
   max-width: 100%;
